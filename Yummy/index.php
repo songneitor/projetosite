@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,35 +30,36 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <?php include_once './config/conexao.php';?>
-  <?php include_once './config/constantes.php';?>
-  <?php include_once './config/func.php';?>
+  <?php include_once './config/conexao.php'; ?>
+  <?php include_once './config/constantes.php'; ?>
+  <?php include_once './config/func.php'; ?>
 </head>
 
 <body>
 
-  <?php include_once 'menu.php'?>
-  <?php include_once 'banner.php'?>
- 
- 
+  <?php include_once 'menu.php' ?>
+  <?php include_once 'banner.php' ?>
+
+
   <main id="main">
 
-  <?php include_once 'sobrenos.php'?>
-  <?php include_once 'pqdaempresa.php'?>
-  <?php include_once 'estatisticaempresa.php'?>
-  <?php include_once 'cardapio.php'?>
-  <?php include_once 'opniaocliente.php'?>
-  <?php include_once 'eventos.php'?>
-  <?php include_once 'chefes.php'?>
-  <?php include_once 'reservarmesa.php'?>
-  <?php include_once 'galeria.php'?>
-  <?php include_once 'contato.php'?>
+    <?php include_once 'sobrenos.php' ?>
+    <?php include_once 'pqdaempresa.php' ?>
+    <?php include_once 'estatisticaempresa.php' ?>
+    <?php include_once 'cardapio.php' ?>
+    <?php include_once 'opniaocliente.php' ?>
+    <?php include_once 'eventos.php' ?>
+    <?php include_once 'chefes.php' ?>
+    <?php include_once 'reservarmesa.php' ?>
+    <?php include_once 'galeria.php' ?>
+    <?php include_once 'contato.php' ?>
 
 
   </main><!-- End #main -->
-  <?php include_once 'footer.php'?>
+  <?php include_once 'footer.php' ?>
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 

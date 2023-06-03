@@ -65,7 +65,7 @@ function inserirp ($nproduto, $quant, $desc){
         return'Vazio';
      }
     }
-    function ListarTodosRegistros(){
+  /*  function ListarTodosRegistros(){
         $conn=conectar();
         try{$sqlLista= $conn->prepare("SELECT idbanner, img, titulo, descricao, video, cadastro, alteracao, ativo FROM banner b " );
             $sqlLista->execute();
@@ -79,6 +79,27 @@ function inserirp ($nproduto, $quant, $desc){
             return ($e->getMessage());
         };
         $conn =   null;
-    }
-
+    } *//* $sth->bindValue(1, $calories, PDO::PARAM_INT);
+$sth->bindValue(2, $colour, PDO::PARAM_STR);
+$sth->execute(); */
+        
+     function listarTodosRegistros( $campos, $tabela, $ativo){
+    $conn = conectar();
+    try {
+        $sqlLista = $conn->prepare("SELECT $campos FROM $tabela WHERE ativo = ? ");
+        $sqlLista->bindValue(1, $ativo, PDO::PARAM_STR);
+        $sqlLista->execute();
+        if ($sqlLista->rowCount() > 0) {
+            return $sqlLista->fetchAll(PDO::FETCH_OBJ);
+        } else {
+            return 'Vazio';
+        };
+    }catch
+    (PDOExecption $e) {
+        echo 'Exception -> ';
+        return ($e->getMessage());
+    };
+    $conn = null;
+}
+ 
 ?>

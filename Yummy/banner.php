@@ -1,5 +1,5 @@
 <?php
-$listarcliente = listarTodosRegistros();
+$listarcliente = listarTodosRegistros( 'idbanner, img, titulo, descricao, video, cadastro, alteracao, ativo ', 'banner', 'A');
 
 if ($listarcliente == 'Vazio') {
   echo '<h6 class="text-center mt-5 p-5 bg-danger text-white">Nenhum registro cadastrado no banco de dados!</h6>';
@@ -36,7 +36,7 @@ if ($listarcliente == 'Vazio') {
         </div>
       </div>
       <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-        <img src="<?php echo $img; ?>" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
+        <img src="./assets/img/<?php echo $img?>" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
       </div>
     </div>
   </div>
