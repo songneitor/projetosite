@@ -29,6 +29,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 
   <?php include_once './config/conexao.php'; ?>
   <?php include_once './config/constantes.php'; ?>

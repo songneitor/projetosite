@@ -102,4 +102,26 @@ $sth->execute(); */
     $conn = null;
 }
  
+
+function listarTodosRegistrosPar($campos, $tabela, $ativo, $param2, $val2){
+    $conn = conectar();
+    try {
+        $sqlLista = $conn->prepare("SELECT $campos FROM $tabela WHERE ativo = ? AND $param2 = ?");
+        $sqlLista->bindValue(1, $ativo, PDO::PARAM_STR);
+        $sqlLista->bindValue(2, $val2, PDO::PARAM_INT);
+        
+        $sqlLista->execute();
+        if ($sqlLista->rowCount() > 0) {
+            return $sqlLista->fetchAll(PDO::FETCH_OBJ);
+        } else {
+            return 'Vazio';
+        };
+    }catch
+    (PDOExecption $e) {
+        echo 'Exception -> ';
+        return ($e->getMessage());
+    };
+    $conn = null;
+}
+
 ?>
