@@ -31,10 +31,11 @@ if ($listarcliente == 'Vazio') {
 
         <div class="row gy-4">
           <div class="col-lg-7 position-relative about-img" style="background-image:url(assets/img/<?php echo $imagem?>);" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <h4>Book a Table</h4>
-              <p><?php echo $contato; ?></p>
-            </div>
+            <!-- <div class="call-us position-absolute"> -->
+              
+              <!-- <h4>Book a Table</h4> -->
+              <!-- <p><?php echo $contato; ?></p> -->
+            <!-- </div> -->
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
             <div class="content ps-0 ps-lg-5">

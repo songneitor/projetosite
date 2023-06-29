@@ -45,7 +45,7 @@
   <main id="main">
 
     <?php include_once 'sobrenos.php' ?>
-    <?php include_once 'pqdaempresa.php' ?>
+    <?php include_once 'cards.php' ?>
     <?php include_once 'estatisticaempresa.php' ?>
     <?php include_once 'cardapio.php' ?>
     <?php include_once 'opniaocliente.php' ?>

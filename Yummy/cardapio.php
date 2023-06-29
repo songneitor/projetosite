@@ -1,3 +1,4 @@
+
 <section id="menu" class="menu">
   <div class="container" data-aos="fade-up">
 
@@ -58,8 +59,8 @@
     ?>
         <div class="chatice">
           <div class="menu-item">
-            <a href="assets/img/menu/<?php echo $img ?>" class="glightbox">
-              <img src="assets/img/menu/<?php echo $img ?>" class="menu-img img-fluid" alt="">
+            <a href="./assets/img/<?php echo $img ?>" class="glightbox">
+              <img src="./assets/img/<?php echo $img ?>" class="menu-img img-fluid" alt="">
             </a>
             <h4><?php echo $titulo ?></h4>
             <p class="ingredients"><?php echo $descricao ?></p>

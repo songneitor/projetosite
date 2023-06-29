@@ -13,7 +13,7 @@ function usuario ()
 }
 function inserir ($nome,$cpf, $email, $senha){
     $conn=conectar();
-    $lista= $conn->prepare ("INSERT INTO cliente (nome, cpf, email, senha) VALUES ('$nome','$cpf', '$email', '$senha')");
+    $lista= $conn->prepare ("INSERT INTO cliente (nome, cpf, celular, datum, hora, pessoas, mensagem ) VALUES ('$nome','$cpf', '$email', '$senha')");
     $lista->execute();
     if($lista->rowCount()>0){
         return "Gravado";
@@ -95,11 +95,10 @@ $sth->execute(); */
             return 'Vazio';
         };
     }catch
-    (PDOExecption $e) {
+    (PDOException $e) {
         echo 'Exception -> ';
         return ($e->getMessage());
     };
-    $conn = null;
 }
  
 
@@ -117,11 +116,10 @@ function listarTodosRegistrosPar($campos, $tabela, $ativo, $param2, $val2){
             return 'Vazio';
         };
     }catch
-    (PDOExecption $e) {
+    (PDOException $e) {
         echo 'Exception -> ';
         return ($e->getMessage());
     };
-    $conn = null;
 }
 
 ?>
